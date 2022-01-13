@@ -30,7 +30,7 @@ let RoverBio = (props) => {
         let date = new Date();
         string = string.split('-')
         date.setFullYear(string[0])
-        date.setMonth(string[1])
+        date.setMonth(string[1] -1)
         date.setDate(string[2])
         return date
     }
@@ -100,6 +100,7 @@ let RoverBio = (props) => {
                                             sx={{mr: 2}}
                                             label='Pick a Date'
                                             maxDate={new Date()}
+                                            minDate={landingDate}
                                             value={value}
                                             onChange={(newValue) => {
                                             setValue(newValue);

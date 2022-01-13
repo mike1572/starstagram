@@ -88,20 +88,26 @@ export const loadAstronomyPic = (time) => (dispatch) => {
 export const setRoverData = (date, rover) => (dispatch) => {
     let apiURL = `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?earth_date=${date}&api_key=${apiKey}`;
 
-    if (rover === 'curiosity'){
+    if (rover === 'perseverance'){
         dispatch({
             type: SET_ROVER_NUM,
             payload: 0
         })
-    } else if (rover === 'opportunity'){
+    }
+    else if (rover === 'curiosity'){
         dispatch({
             type: SET_ROVER_NUM,
             payload: 1
         })
-    } else if (rover === 'spirit'){
+    } else if (rover === 'opportunity'){
         dispatch({
             type: SET_ROVER_NUM,
             payload: 2
+        })
+    } else if (rover === 'spirit'){
+        dispatch({
+            type: SET_ROVER_NUM,
+            payload: 3
         })
     }
 

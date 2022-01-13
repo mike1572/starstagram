@@ -21,6 +21,7 @@ import IconButton from '@mui/material/IconButton';
 import Curiosity from '../images/curiosity.jpg';
 import Opportunity from '../images/opportunity.jpg';
 import Spirit from '../images/spirit.jpg';
+import Perseverance from '../images/perseverance.jpg';
 
 let MarsPost = (props) => {
 
@@ -41,6 +42,8 @@ let MarsPost = (props) => {
         imageRover = Curiosity;
     } else if (rover === "Opportunity"){
         imageRover = Opportunity
+    } else if (rover === "Perseverance"){
+        imageRover = Perseverance
     }
 
     useEffect(()=> {

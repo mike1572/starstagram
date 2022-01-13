@@ -1,16 +1,19 @@
 
 
 #header {
-  font-family: "Lucida Handwriting", 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Brush Script MT', 'Garamond', Arial, cursive;
   margin: auto;
   justify-content: center;
+  font-size: xx-large;
+  letter-spacing: 2px;
 }
 
 body {
-  background-color: blue;
+  background-color: rgb(2, 2, 37);
   background-image: url('./stars.jpg');
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 

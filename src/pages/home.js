@@ -28,8 +28,16 @@ import { loadingDataFalse, loadingDataTrue, setShowTimeClose, loadAstronomyPic} 
 import Curiosity from '../images/curiosity.jpg';
 import Opportunity from '../images/opportunity.jpg';
 import Spirit from '../images/spirit.jpg';
+import Perseverance from '../images/perseverance.jpg'
 
 let rovers = [
+    {
+        landing_date: "2021-02-18",
+        launch_date: "2020-07-30",
+        name: "Perseverance",
+        status: "Active", 
+        image: Perseverance
+    },
     {
         landing_date: "2012-08-06",
         launch_date: "2011-11-26",
